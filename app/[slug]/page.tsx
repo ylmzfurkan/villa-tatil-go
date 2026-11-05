@@ -10,6 +10,7 @@ const content:Record<string,{eyebrow:string;title:string;copy:string}>={
   rehber:{eyebrow:"VILLATATILGO REHBER",title:"Kaş’ı yerel biri gibi yaşayın",copy:"Plajlar, restoranlar, antik rotalar ve günübirlik gezi önerileri."},
   hakkimizda:{eyebrow:"BİZİ TANIYIN",title:"Kaş sevgisinden doğan bir tatil markası",copy:"Doğru villayı bulmayı kolaylaştıran, yerel ve şeffaf bir deneyim tasarlıyoruz."},
   favoriler:{eyebrow:"SİZE ÖZEL",title:"Beğendiğiniz villalar",copy:"Favorilerinize eklediğiniz seçenekleri burada karşılaştırabilirsiniz."},
+  iletisim:{eyebrow:"BİZE ULAŞIN",title:"Tatil planınızı birlikte oluşturalım",copy:"Sorularınız ve rezervasyon talepleriniz için demo iletişim kanallarımızdan bize ulaşabilirsiniz."},
 };
 
 export default async function GenericPage({params}:{params:Promise<{slug:string}>}){
