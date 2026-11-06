@@ -383,32 +383,17 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
               aria-label="TÜRSAB acenta doğrulama sayfasını yeni sekmede aç, Belge No 4035"
-              className="mt-6 block max-w-[340px] rounded-[20px] border border-white/15 bg-white/[.06] p-4 transition hover:border-white/30 hover:bg-white/[.1]"
+              className="mt-6 block w-fit max-w-full overflow-hidden rounded-md shadow-[0_12px_30px_rgba(0,0,0,.22)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_36px_rgba(0,0,0,.3)]"
             >
-              <div className="flex items-start gap-3">
-                <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-white text-[var(--teal)]">
-                  <ShieldCheck size={21} />
-                </span>
-                <div>
-                  <p className="text-[10px] font-extrabold uppercase tracking-[.12em] text-[var(--sun)]">
-                    Yetkili acenta bilgisi
-                  </p>
-                  <p className="mt-1 text-sm font-extrabold leading-5">
-                    Lisanslı A Grubu Seyahat Acentası
-                  </p>
-                  <p className="mt-1 text-xs text-white/55">
-                    Belge No <strong className="text-white">4035</strong>
-                  </p>
-                </div>
-              </div>
-              <div className="mt-4 flex items-center justify-between rounded-xl border border-dashed border-white/15 px-3 py-2.5">
-                <span className="text-[10px] font-bold text-white/65">
-                  TÜRSAB Dijital Doğrulama
-                </span>
-                <span className="text-[9px] text-white/35">
-                  Resmî rozet eklenecek ↗
-                </span>
-              </div>
+              <img
+                src="/tursab-dds-4035.png"
+                alt="TÜRSAB Dijital Doğrulama Sistemi, Belge No 4035"
+                width="290"
+                height="132"
+                loading="lazy"
+                decoding="async"
+                className="h-auto w-[290px] max-w-full"
+              />
             </a>
           </div>
           <div>
