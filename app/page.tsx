@@ -158,28 +158,50 @@ export default function Home() {
       </section>
 
       <section className="relative z-20 -mt-14">
-        <div className="container-shell grid overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-[0_18px_60px_rgba(15,47,45,.12)] sm:grid-cols-2 lg:grid-cols-4">
-          {[
-            [ShieldCheck, "Doğrulanmış villalar", "Kontrollü portföy"],
-            [Headphones, "Yerel destek", "Haftanın 7 günü"],
-            [CalendarDays, "Güncel takvim", "Anlık müsaitlik"],
-            [CheckCircle2, "Şeffaf fiyat", "Sürpriz ücret yok"],
-          ].map(([Icon, title, text]: any) => (
-            <div
-              key={title}
-              className="flex items-center gap-4 border-b border-slate-100 px-6 py-6 last:border-0 sm:border-r lg:border-b-0"
-            >
-              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-[var(--sand)] text-[var(--coral)]">
-                <Icon size={21} />
-              </span>
-              <div>
-                <strong className="block text-sm text-[var(--ink)]">
-                  {title}
-                </strong>
-                <span className="text-xs text-slate-500">{text}</span>
+        <div className="container-shell">
+          <a
+            href="https://online.tursab.org.tr/publicpages/embedded/agencysearch/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="TÜRSAB acenta doğrulama sayfasını yeni sekmede aç, Belge No 4035"
+            className="group mx-auto mb-3 flex w-fit max-w-full items-center gap-3 rounded-full border border-white/20 bg-[#062825] px-4 py-2.5 text-white shadow-[0_14px_35px_rgba(6,40,37,.28)] transition hover:-translate-y-0.5 hover:bg-[#0b3935] sm:px-5"
+          >
+            <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-white text-[var(--teal)]">
+              <ShieldCheck size={17} />
+            </span>
+            <span className="min-w-0 text-[11px] font-semibold text-white/75 sm:text-xs">
+              Lisanslı A Grubu Seyahat Acentası
+              <span className="mx-2 text-white/25">·</span>
+              Belge No <strong className="text-[var(--sun)]">4035</strong>
+            </span>
+            <ArrowRight
+              size={14}
+              className="shrink-0 text-white/40 transition group-hover:translate-x-0.5 group-hover:text-white"
+            />
+          </a>
+          <div className="grid overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-[0_18px_60px_rgba(15,47,45,.12)] sm:grid-cols-2 lg:grid-cols-4">
+            {[
+              [ShieldCheck, "Doğrulanmış villalar", "Kontrollü portföy"],
+              [Headphones, "Yerel destek", "Haftanın 7 günü"],
+              [CalendarDays, "Güncel takvim", "Anlık müsaitlik"],
+              [CheckCircle2, "Şeffaf fiyat", "Sürpriz ücret yok"],
+            ].map(([Icon, title, text]: any) => (
+              <div
+                key={title}
+                className="flex items-center gap-4 border-b border-slate-100 px-6 py-6 last:border-0 sm:border-r lg:border-b-0"
+              >
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-[var(--sand)] text-[var(--coral)]">
+                  <Icon size={21} />
+                </span>
+                <div>
+                  <strong className="block text-sm text-[var(--ink)]">
+                    {title}
+                  </strong>
+                  <span className="text-xs text-slate-500">{text}</span>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
       <section className="section-space">
