@@ -386,7 +386,7 @@ export default function Home() {
               className="mt-6 block w-fit max-w-full overflow-hidden rounded-md shadow-[0_12px_30px_rgba(0,0,0,.22)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_36px_rgba(0,0,0,.3)]"
             >
               <img
-                src="/tursab-dds-4035.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/tursab-dds-4035.png`}
                 alt="TÜRSAB Dijital Doğrulama Sistemi, Belge No 4035"
                 width="290"
                 height="132"

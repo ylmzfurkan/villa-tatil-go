@@ -13,6 +13,12 @@ const content:Record<string,{eyebrow:string;title:string;copy:string}>={
   iletisim:{eyebrow:"BİZE ULAŞIN",title:"Tatil planınızı birlikte oluşturalım",copy:"Sorularınız ve rezervasyon talepleriniz için demo iletişim kanallarımızdan bize ulaşabilirsiniz."},
 };
 
+export function generateStaticParams() {
+  return ["bolgeler", "kampanyalar", "rehber", "hakkimizda", "iletisim"].map(
+    (slug) => ({ slug }),
+  );
+}
+
 export default async function GenericPage({params}:{params:Promise<{slug:string}>}){
   const {slug}=await params; const item=content[slug]??content.rehber;
   const icon=slug==="bolgeler"?<MapPin/>:slug==="favoriler"?<Heart/>:slug==="rehber"?<BookOpen/>:<Sparkles/>;
